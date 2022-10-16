@@ -1,0 +1,22 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+    <th>Nom</th>
+    <th>Prénom</th>
+    <th>Email</th>
+    <th>Salaire</th>
+    <th>Niveau d'expérience</th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let employee of employees">
+      <td>{{employee.firstname}}</td>
+      <td>{{employee.lastname}}</td>
+      <td>{{employee.email}}</td>
+      <td>{{employee.salary}}</td>
+      <td *ngIf="employee.experience < 2"><span class="text-info">Junior</span> </td>
+      <td *ngIf="employee.experience >= 2 && employee.experience <= 3"><span class="text-primary">Confirmé</span></td>
+      <td *ngIf="employee.experience >5"><span class="text-success">Senior</span></td>
+    </tr>
+  </tbody>
+</table>
