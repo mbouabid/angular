@@ -1,3 +1,4 @@
+import { Employee } from './../model/employee';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./employees-list.component.css']
 })
 export class EmployeesListComponent implements OnInit {
-  emp1 = {
+ /* emp1 = {
     firstname : "Mohamed",
     lastname : "Ali",
     email : "mohamed@gmail.com",
@@ -19,8 +20,12 @@ export class EmployeesListComponent implements OnInit {
     email : "salah@gmail.com",
     salary : 3000,
     experience : 3
-  }
-  employees = [this.emp1,this.emp2]
+  }*/
+  //employees = [this.emp1,this.emp2]
+  employees = [
+    new Employee("Mohamed","Bouabid","mohamed@gmail.com",1000,0),
+    new Employee("Fatma","Bouabid","mohamed@gmail.com",2000,2)
+  ]
 
   constructor() { }
 
