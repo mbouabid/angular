@@ -1,0 +1,61 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "firstname": "mohamed",
+      "lastname": "bouabid",
+      "email": "mohamed@gmail.com",
+      "salary": 1000,
+      "experience": 0
+    },
+    {
+      "id": 2,
+      "firstname": "fatma",
+      "lastname": "bouabid",
+      "email": "fatma@gmail.com",
+      "salary": 2000,
+      "experience": 2
+    },
+    {
+      "id": 3,
+      "firstname": "ali",
+      "lastname": "bouabid",
+      "email": "ali@gmail.com",
+      "salary": 3000,
+      "experience": 5
+    },
+    {
+      "firstname": "a",
+      "lastname": "a",
+      "email": "adnan@gmail.com",
+      "salary": 9000,
+      "experience": 6,
+      "id": 4
+    },
+    {
+      "firstname": "ddd",
+      "lastname": "ddd",
+      "email": "ddd",
+      "salary": 3,
+      "experience": 33,
+      "id": 5
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

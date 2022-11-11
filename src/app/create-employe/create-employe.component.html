@@ -12,16 +12,16 @@
     </div>
     <div>
       <label class="form-label">Email</label>
-      <input type="mail" name="emailId" class="form-control" [(ngModel)]="employee.email" />
+      <input type="email" name="mail" class="form-control" [(ngModel)]="employee.email" />
     </div>
     <div>
       <label class="form-label">Salaire</label>
-      <input type="text" name="emailId" class="form-control" [(ngModel)]="employee.salary" />
+      <input type="number" name="salaire" class="form-control" [(ngModel)]="employee.salary" />
     </div>
     <div>
       <label class="form-label">Nombre d'années d'expérience</label>
       <input type="number" name="experience" class="form-control" [(ngModel)]="employee.experience" />
     </div>
-    <button class="btn btn-success">Enregister</button>
+    <button class="btn btn-success" (click)="add()">Enregister</button>
   </form>
 </div>

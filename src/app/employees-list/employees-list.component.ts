@@ -1,5 +1,7 @@
+import { EmployeeService } from './../services/employee.service';
 import { Employee } from './../model/employee';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-employees-list',
@@ -7,37 +9,37 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./employees-list.component.css']
 })
 export class EmployeesListComponent implements OnInit {
- /* emp1 = {
-    firstname : "Mohamed",
-    lastname : "Ali",
-    email : "mohamed@gmail.com",
-    salary : 1500,
-    experience : 0
-  }
-  emp2 = {
-    firstname : "Mohamed",
-    lastname : "Salah",
-    email : "salah@gmail.com",
-    salary : 3000,
-    experience : 3
-  }*/
-  //employees = [this.emp1,this.emp2]
-  employees = [
-    new Employee("Mohamed","Bouabid","mohamed@gmail.com",1000,0),
-    new Employee("Fatma","Bouabid","mohamed@gmail.com",2000,2)
-  ]
-
-  constructor() { }
+  employees : Employee[] = []
+  constructor(private _employeService : EmployeeService,
+    private router : Router) { }
 
   ngOnInit(): void {
-    this.employees.push({
-      firstname : "Mohamed",
-      lastname : "Amine",
-      email : "Amine@gmail.com",
-      salary : 4000,
-      experience : 6
+    this.getEmployeesList()
+  }
+
+  private getEmployeesList() {
+    this._employeService.getAll().subscribe(data => {
+      this.employees = data;
     })
-    console.log(this.employees)
+  }
+
+  updateEmploye(id: number) {
+    this.router.navigate(['update-employe',id])
+  }
+  deleteEmploye(id: number) {
+    this._employeService.deleteEmploye(id).subscribe(data => {
+      this.router.navigate(['employees'])
+    })
+  }
+  showEmploye(id: number) {
+    this.router.navigate(['employee-details',id])
+
+  }
+  delete(id : any){
+
+  }
+  edit (employee : Employee){
+
   }
 
 }
