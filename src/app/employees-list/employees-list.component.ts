@@ -22,4 +22,24 @@ export class EmployeesListComponent implements OnInit {
       this.employees = data;
     })
   }
+
+  editEmploye(id: number) {
+    this.router.navigate(['edit-employe',id])
+  }
+  deleteEmploye(id: number) {
+    let  response = confirm("Voulez vous vraiment supprimer ce compte?");
+    if (response){
+      this._employeService.deleteEmploye(id).subscribe(data => {
+        //this.router.navigate(['/employees'])
+        this.employees=this.employees.filter(item => item.id !== id)
+      },
+      error => console.log(error));
+
+    }
+
+  }
+  showEmploye(id: number) {
+    this.router.navigate(['employee-details',id])
+
+  }
 }

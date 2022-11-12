@@ -10,6 +10,7 @@
     <th>Email</th>
     <th>Salaire</th>
     <th>Niveau d'expérience</th>
+    <th>Actions</th>
 
   </tr>
   </thead>
@@ -22,6 +23,8 @@
       <td *ngIf="employee.experience < 2"><span class="text-info">Junior</span> </td>
       <td *ngIf="employee.experience >= 2 && employee.experience <= 3"><span class="text-primary">Confirmé</span></td>
       <td *ngIf="employee.experience > 3"><span class="text-success">Senior</span></td>
+      <td><button class="btn btn-outline-success" (click)="deleteEmploye(employee.id)" ><i class="fas fa-trash-alt"></i></button></td>
+      <td><button class="btn btn-outline-danger"(click)="editEmploye(employee.id)"><i class="fas fa-edit"></i></button></td>
     </tr>
   </tbody>
 </table>
