@@ -2,44 +2,93 @@
   "employees": [
     {
       "id": 1,
-      "firstname": "mohamed",
-      "lastname": "bouabid",
-      "email": "mohamed@gmail.com",
-      "salary": 1000,
-      "experience": 0
+      "firstname": "Lorem ",
+      "lastname": "ipsum",
+      "email": "Lorem1@gmail.com",
+      "salary": 3000,
+      "experience": 30,
+      "photo": "avatar-7.webp",
+      "profession": "frontend developper"
     },
     {
       "id": 2,
-      "firstname": "fatma",
-      "lastname": "bouabid",
-      "email": "fatma@gmail.com",
+      "firstname": "amet ",
+      "lastname": "consectetur",
+      "email": "amet@gmail.com",
       "salary": 2000,
-      "experience": 2
+      "experience": 2,
+      "photo": "avatar-2.webp",
+      "profession": "backend developper"
     },
     {
       "id": 3,
-      "firstname": "ali",
-      "lastname": "bouabid",
-      "email": "ali@gmail.com",
+      "firstname": "adipi ",
+      "lastname": "elit",
+      "email": "elit@gmail.com",
+      "salary": 5000,
+      "experience": 20,
+      "photo": "avatar-3.webp",
+      "profession": "fullstack developper"
+    },
+    {
+      "id": 4,
+      "firstname": "amet ",
+      "lastname": "consectetur",
+      "email": "amet@gmail.com",
+      "salary": 2000,
+      "experience": 2,
+      "photo": "avatar-4.webp",
+      "profession": "test engineer"
+    },
+    {
+      "id": 5,
+      "firstname": "Lorem ",
+      "lastname": "ipsum",
+      "email": "Lorem@gmail.com",
       "salary": 3000,
-      "experience": 7
-    }
-  ],
-  "posts": [
+      "experience": 30,
+      "photo": "avatar-5.webp",
+      "profession": "web designer"
+    },
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "id": 6,
+      "firstname": "amet ",
+      "lastname": "consectetur",
+      "email": "amet@gmail.com",
+      "salary": 2000,
+      "experience": 2,
+      "photo": "avatar-6.webp",
+      "profession": "database administrator"
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 7,
+      "firstname": "adipisi ",
+      "lastname": "elita",
+      "email": "elit@gmail.com",
+      "salary": 5000,
+      "experience": 3,
+      "photo": "avatar-7.webp",
+      "profession": "web senior developper"
+    },
+    {
+      "id": 8,
+      "firstname": "amet ",
+      "lastname": "consectetur",
+      "email": "amet@gmail.com",
+      "salary": 2000,
+      "experience": 2,
+      "photo": "avatar-2.webp",
+      "profession": "backend developper"
+    },
+    {
+      "id": 9,
+      "firstname": "Lorem ",
+      "lastname": "ipsum",
+      "email": "Lorem@gmail.com",
+      "salary": 3000,
+      "experience": 30,
+      "photo": "avatar-7.webp",
+      "profession": "frontend developper"
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

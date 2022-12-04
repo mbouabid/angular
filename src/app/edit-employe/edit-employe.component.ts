@@ -11,13 +11,11 @@ import { EmployeeService } from '../services/employee.service';
 export class EditEmployeComponent implements OnInit {
   employee : Employee = new Employee()
   id! : number
-
   constructor(
     private employeeService: EmployeeService,
     private route: ActivatedRoute,
     private router: Router
   ) { }
-
   ngOnInit(): void {
     this.id = this.route.snapshot.params['id'];
     this.employeeService.getEmployeeById(this.id).subscribe(
@@ -35,7 +33,6 @@ export class EditEmployeComponent implements OnInit {
       (error) => console.log(error)
     );
   }
-
   goToEmployeeList() {
     this.router.navigate(['/employees']);
   }

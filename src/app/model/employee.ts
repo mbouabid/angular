@@ -7,4 +7,12 @@ export class Employee {
   email!: string;
   salary!: number;
   experience!: number;
+  photo !: string
+  profession!: string
+}
+export interface PageOfEmployees{
+  employees : Employee[]
+  page : number
+  size : number
+  totalPages : number
 }
